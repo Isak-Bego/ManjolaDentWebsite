@@ -37,6 +37,7 @@ body {
   display: none;
   padding: 0.5em;
   margin: auto 0.1em;
+  cursor: pointer;
 }
 
 .container {
@@ -57,6 +58,7 @@ body {
   opacity: 0.8;
   font-size: 1em;
   text-align: center;
+  cursor: pointer;
 }
 
 .hidden-menu li {
@@ -88,7 +90,7 @@ body {
 .change .bar1,
 .change .bar2,
 .change .bar3 {
-  background-color: red;
+  background-color: var(--secondary-color);
 }
 
 .about-content {
@@ -98,8 +100,18 @@ body {
 }
 
 .about-text {
-  margin: 1em;
+  margin: 1em; 
+  padding-bottom: 1em;
 }
+
+.about-text h1{
+  color: var(--secondary-color); 
+}
+
+.about-text p{
+  color: white; 
+}
+
 
 @media (min-width: 40em) {
   .container {
@@ -110,5 +122,20 @@ body {
   }
   .hidden-menu li {
     display: none;
+  }
+
+  .about-content {
+    flex-direction: row;
+  }
+
+  .about-content img{
+    width: 50%;
+    height: max-content;
+    margin: auto ;
+  }
+
+  .about-text{
+    width: 50%;
+    margin: auto 1em;
   }
 }
