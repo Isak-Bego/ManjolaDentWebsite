@@ -147,6 +147,31 @@ body {
   text-align: center;
 }
 
+
+.contact-section{
+  display: flex;
+  background-color: var(--primary-color);
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.contact-information{
+  margin: 1em;
+  width: 40%;
+}
+
+.social-icons img{
+  width: 15%;
+  max-width: 3em; 
+  margin-right: 0.3em;
+}
+
+#map {
+  height: 400px; 
+  width: 100%; 
+}
+
+
 @media (min-width: 40em) {
   .container {
     display: none;
