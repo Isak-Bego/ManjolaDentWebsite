@@ -17,24 +17,23 @@
           <div class="logo">
             <img src="./images/logo1.png" alt="Clinic Logo" />
           </div>
-          <li class="hide" onclick="scrolling('klinika')">Klinika</li>
-          <li class="hide" onclick="scrolling('sherbime')">Sherbime Dentare</li>
-          <li class="hide" onclick="scrolling('kontakt')">Kontakt</li>
-          <li><a href="https://wa.me/355677198678"><img src="./images/WhatsAppButtonGreenSmall.png" alt="" style="max-width: 50%;"></a></li>
+          <li class="hide" onclick="scrolling('klinika', true)">Klinika</li>
+          <li class="hide" onclick="scrolling('sherbime', true)">Sherbime Dentare</li>
+          <li class="hide" onclick="scrolling('kontakt', true)">Kontakt</li>
         </div>
-
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
 
       <div class="hidden-menu">
-        <li onclick="scrolling('klinika')">Klinika</li>
-        <li onclick="scrolling('sherbime')">Sherbime Dentare</li>
-        <li onclick="scrolling('kontakt')">Kontakt</li>
+        <li onclick="scrolling('klinika', false)">Klinika</li>
+        <li onclick="scrolling('sherbime', false)">Sherbime Dentare</li>
+        <li onclick="scrolling('kontakt', false)">Kontakt</li>
       </div>
+
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </div>
 
       <div class="about-content">
         <div class="about-text">
@@ -113,6 +112,8 @@
       </div>
     </div>
 
-    <script src="code.js"></script>
+    <a href="https://wa.me/355677198678"><img src="./images/WhatsAppButtonGreenSmall.png" alt="Chat with whatsapp" class="whatsapp-logo"></a>
+
+    <script src="index.js"></script>
   </body>
 </html>
