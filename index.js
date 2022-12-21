@@ -1,20 +1,18 @@
 let menu = document.getElementsByClassName("hidden-menu");
+const container = document.getElementsByClassName("container");
 
 function myFunction(x) {
-
   x.classList.toggle("change");
   if (x.className != "container") {
-    disableScroll(); 
+    disableScroll();
     menu[0].style.display = "block";
-  } else{
-    enableScroll(); 
+  } else {
+    enableScroll();
     menu[0].style.display = "none";
-  }   
-
+  }
 }
 
 function scrolling(s, navbar) {
-  
   let prevSection;
   let height;
   if (s === "klinika") window.scrollTo(0, 0);
@@ -27,23 +25,27 @@ function scrolling(s, navbar) {
     height = prevSection[0].clientHeight;
     window.scrollTo(0, height);
   }
-  
-  if(!navbar){
-    const container = document.getElementsByClassName("container");
+
+  if (!navbar) {
     myFunction(container[0]);
   }
-  
 }
 
-function disableScroll(){
-  const top = window.pageYOffset; 
-  const left = window.pageXOffset; 
+function disableScroll() {
+  const top = window.pageYOffset;
+  const left = window.pageXOffset;
 
-  window.onscroll = function() {
+  window.onscroll = function () {
     window.scrollTo(left, top);
-  }; 
+  };
 }
 
-function enableScroll(){
-  window.onscroll = function() {}
+function enableScroll() {
+  window.onscroll = function () {};
+}
+
+function disableHiddenMenu() {
+  if (window.innerWidth > 640) menu[0].style.display = "none";
+  else if (container[0].className != "container")
+    menu[0].style.display = "block";
 }

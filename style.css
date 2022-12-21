@@ -2,6 +2,7 @@
   --myfont: Poppins;
   --primary-color: rgb(30, 143, 177);
   --secondary-color: rgb(146, 212, 226);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -141,7 +142,6 @@ body {
 .image-placeholder {
   width: 100%;
   height: 70%;
-  cursor: pointer;
 }
 
 .image-placeholder img {
@@ -195,9 +195,6 @@ body {
   }
   .navbar .hide {
     display: inline-block;
-  }
-  .hidden-menu li{
-    display: none;
   }
 
   .hidden-menu{
