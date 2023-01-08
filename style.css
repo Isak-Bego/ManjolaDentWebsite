@@ -1,7 +1,7 @@
 :root {
   --myfont: Poppins;
-  --primary-color: rgb(30, 143, 177);
-  --secondary-color: rgb(146, 212, 226);
+  --primary-color: rgb(4, 86, 130);
+  --secondary-color: rgb(2, 168, 208);
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
@@ -22,7 +22,8 @@ body {
   margin: auto 0;
   flex-direction: row;
   align-content: center;
-  color: white;
+  color: var(--primary-color);
+  background-color: white;
 }
 
 .header {
@@ -32,7 +33,7 @@ body {
 .logo img {
   display: inline-block;
   margin: 1em;
-  width: 5em;
+  width: 3em;
 }
 
 .navbar li {
@@ -42,7 +43,7 @@ body {
 }
 
 .navbar li:hover {
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 .navbar .hide {
@@ -52,8 +53,8 @@ body {
 .container {
   cursor: pointer;
   position: absolute;
-  right: 2em;
-  top: 2em;
+  right: 1em;
+  top: 1.4em;
   display: block;
   float: right;
 }
@@ -86,7 +87,7 @@ body {
 .bar3 {
   width: 2em;
   height: 0.5em;
-  background-color: white;
+  background-color: var(--primary-color);
   margin: 1px 0;
   transition: 0.4s;
 }
@@ -309,7 +310,24 @@ body {
     margin: auto 1em;
   }
 
-  .slideshow-container {
-    width: 90%;
+  .slideshow-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 3em; 
+  }
+
+  .slideshow-container{
+    flex-basis: 600px;
+    margin: 2em; 
+  }
+
+  .slideshow-description{
+    flex-basis: 300px; 
+    margin: 2em; 
+  }
+
+  .logo img{
+    width: 5em; 
   }
 }
