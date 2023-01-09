@@ -5,7 +5,7 @@ function myFunction(x) {
   x.classList.toggle("change");
   if (x.className != "container") {
     disableScroll();
-    menu[0].style.display = "block";
+    menu[0].style.display = "flex";
   } else {
     enableScroll();
     menu[0].style.display = "none";
@@ -72,7 +72,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
+  let descriptions = document.getElementsByClassName("slideshow-description"); 
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -81,10 +81,9 @@ function showSlides(n) {
   }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    descriptions[i].className = "slideshow-description"; 
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  descriptions[slideIndex - 1].className = "slideshow-description show-description"; 
 }
