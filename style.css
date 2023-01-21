@@ -30,6 +30,20 @@ body {
   position: relative;
 }
 
+.mycontainer{
+  width: 90%; 
+  max-width: 1200px; 
+  margin: auto; 
+}
+
+.mycontainer-nav{ 
+  display: flex;
+}
+
+.container{
+  margin: auto 0 auto auto ; 
+}
+
 .logo img {
   display: inline-block;
   margin: 1em;
@@ -50,15 +64,6 @@ body {
   display: none;
 }
 
-.container {
-  cursor: pointer;
-  position: absolute;
-  right: 1em;
-  top: 1.4em;
-  display: block;
-  float: right;
-}
-
 .hidden-menu {
   position: absolute;
   display: none;
@@ -67,7 +72,7 @@ body {
   align-items: center;
   top: 0;
   right: 0;
-  width: 50vmax;
+  width: 100vw; 
   height: 100vh;
   background-color: black;
   color: white;
@@ -116,7 +121,6 @@ body {
 .about-content {
   display: flex;
   flex-direction: column;
-  margin: 1em;
 }
 
 .about-text {
@@ -340,7 +344,7 @@ iframe{
     margin: 2em;
     background-color: rgb(244, 244, 244);
     border-radius: 15px;
-    align-self: stretch;
+    align-self: flex-start;
     display: none;
   }
 

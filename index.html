@@ -10,36 +10,38 @@
     />
     <title>Manjola Dent</title>
   </head>
+
   <body onresize="disableHiddenMenu()">
     <div class="about-section">
       <div class="header">
         <div class="navbar">
-          <div class="logo">
-            <img src="./images/logo1.png" alt="Clinic Logo" />
+          <div class="hidden-menu">
+            <li onclick="scrolling('klinika', false)">Klinika</li>
+            <li onclick="scrolling('sherbime', false)">Sherbime Dentare</li>
+            <li onclick="scrolling('paciente', false)">Paciente</li>
+            <li onclick="scrolling('kontakt', false)">Kontakt</li>
           </div>
-          <li class="hide" onclick="scrolling('klinika', true)">Klinika</li>
-          <li class="hide" onclick="scrolling('sherbime', true)">
-            Sherbime Dentare
-          </li>
-          <li class="hide" onclick="scrolling('paciente', true)">Paciente</li>
-          <li class="hide" onclick="scrolling('kontakt', true)">Kontakt</li>
-        </div>
 
-        <div class="hidden-menu">
-          <li onclick="scrolling('klinika', false)">Klinika</li>
-          <li onclick="scrolling('sherbime', false)">Sherbime Dentare</li>
-          <li onclick="scrolling('paciente', false)">Paciente</li>
-          <li onclick="scrolling('kontakt', false)">Kontakt</li>
-        </div>
-
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+          <div class="mycontainer mycontainer-nav">
+            <div class="logo">
+              <img src="./images/logo1.png" alt="Clinic Logo" />
+            </div>
+            <li class="hide" onclick="scrolling('klinika', true)">Klinika</li>
+            <li class="hide" onclick="scrolling('sherbime', true)">
+              Sherbime Dentare
+            </li>
+            <li class="hide" onclick="scrolling('paciente', true)">Paciente</li>
+            <li class="hide" onclick="scrolling('kontakt', true)">Kontakt</li>
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="about-content">
+      <div class="about-content mycontainer">
         <div class="about-text">
           <h1>Rreth nesh</h1>
           <p>
@@ -61,7 +63,7 @@
     >
       Sherbime Dentare
     </h1>
-    <div class="Sherbime">
+    <div class="Sherbime mycontainer">
       <div class="grid">
         <div class="grid-cell">
           <div class="image-placeholder">
@@ -69,13 +71,6 @@
           </div>
           <h2>Konservative</h2>
           <p>Mbushje e dhembeve duke ruajtur strukturat.</p>
-        </div>
-        <div class="grid-cell">
-          <div class="image-placeholder">
-            <img src="./images/implantologji.jpg" alt="" />
-          </div>
-          <h2>Implantologji</h2>
-          <p>Vendosje e implanteve (mbjellje e dhembeve).</p>
         </div>
         <div class="grid-cell">
           <div class="image-placeholder">
@@ -100,6 +95,13 @@
         </div>
         <div class="grid-cell">
           <div class="image-placeholder">
+            <img src="./images/pexels-shiny-diamond-3762453.jpg" alt="" />
+          </div>
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class="grid-cell">
+          <div class="image-placeholder">
             <img src="./images/protetike.JPG" alt="" />
           </div>
           <h2>Protetike</h2>
@@ -110,19 +112,19 @@
 
     <h1 class="title">Paciente</h1>
     <!-- Slideshow container -->
-    <div class="slideshow-section">
+    <div class="slideshow-section mycontainer">
       <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <img src="./images/slide 1.jpg" style="width: 100%" />
+          <img src="./images/pacientet 1.jpeg" style="width: 100%" />
         </div>
 
         <div class="mySlides fade">
-          <img src="./images/slide 2.jpg" style="width: 100%" />
+          <img src="./images/pacientet 2.jpeg" style="width: 100%" />
         </div>
 
         <div class="mySlides fade">
-          <img src="./images/slide 3.jpg" style="width: 100%" />
+          <img src="./images/pacientet 3.jpeg" style="width: 100%" />
         </div>
 
         <!-- Next and previous buttons -->
@@ -131,31 +133,22 @@
       </div>
 
       <div class="slideshow-description show-description">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p>Ne kujdesemi per buzeqeshjen tuaj!</p>
       </div>
 
       <div class="slideshow-description">
-        <p>
-          Isak ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p>Ne kujdesemi per buzeqeshjen tuaj!</p>
       </div>
 
       <div class="slideshow-description">
-        <p>
-          Test2 ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <p>Ne kujdesemi per buzeqeshjen tuaj!</p>
       </div>
     </div>
 
     <br />
 
     <div class="contact-section">
-      <div class="flex-container">
+      <div class="flex-container mycontainer">
         <div class="contact-information">
           <h1 style="color: var(--secondary-color)">Kontakt</h1>
           <p style="color: white">
@@ -177,15 +170,15 @@
             /></a>
           </div>
         </div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.0903382688109!2d19.77222422919037!3d41.32275510587683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcfccc246446ae7b!2zNDHCsDE5JzIxLjkiTiAxOcKwNDYnMjIuMCJF!5e0!3m2!1sen!2s!4v1673282003284!5m2!1sen!2s"
-            width="500"
-            height="250"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.0903382688109!2d19.77222422919037!3d41.32275510587683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfcfccc246446ae7b!2zNDHCsDE5JzIxLjkiTiAxOcKwNDYnMjIuMCJF!5e0!3m2!1sen!2s!4v1673282003284!5m2!1sen!2s"
+          width="500"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
 
